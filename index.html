@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friday Night Tavern Brawl Prototype</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="menu">
+				<button class="myButton" id="startButton" onclick="StartGame()">Start</button>
+				<button class="myButton" id="stopButton" onclick="StopGame()" disabled="true">Stop</button>
+			</div>
+			<div id="stats" style=""><div id="playerHealth">Player HP: 0 (0 armor)</div><div id="botHealth">Bot HP: 0 (0 armor)</div></div><br/>
+			<textarea id="console" disabled></textarea>
+			<input type="text" id="playerInput" disabled=true /> <input type="submit" id="playerInputSubmit" onclick="PlayCard()" value="Play Card" disabled=true />
+			<input type="text" id="commandLine" placeholder="Debug" /> <input type="submit" onclick="Command()" value="Command"/>
+		</div>
+	</body>
+</html>
